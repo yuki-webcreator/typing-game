@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <div class="title">
+            <h1>Typing Game</h1>
+            <div class="marker"></div>
+        </div>
+        <button v-if="startFlg!=true" class="startButton mb-20" @click="gameStart">START</button>
+
+        <div v-if="startFlg">
+            <div class="question mb-20">{{current_question}}</div>
+            <div v-if="current_question_counts == question_counts" class="clear">clear</div>
+
+            <div class="typeFormWrapper mb-20">
+                <input id="typeForm" v-model="typeBox" type="text" class="typeForm">
+            </div>
+
+        <div class="gaugeWrapper mb-20">
+            <div v-bind:style="styleObject" class="gauge"></div>
+        </div>
+        <div class="page">{{current_question_counts}}/{{question_counts}}</div>
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 32px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    font-size: 20px;
+}
+
+.marker {
+    width: 100%;
+    height: 35%;
+    background: #a2a2a270;
+    position: absolute;
+    bottom: 5%;
+    z-index: -1;
+}
+
+.startButton {
+    background: #333;
+    color: #fff;
+    padding: 7px 60px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.startButton:hover {
+    opacity: .7;
+}
+
+.question {
+    color: gray;
+}
+
+.clear {
+    color: rgb(29, 60, 161);
+}
+
+.typeForm {
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.typeFormWrapper {
+    border-bottom: 1px solid gray;
+}
+
+/* ゲージ */
+.gauge {
+    height: 12px;
+    transition: all .3s ease;
+}
+
+.gaugeWrapper {
+    border: 1px solid;
+    height: 12px;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.page {
+    text-align: center;
+    margin-top: 2rem;
+}
